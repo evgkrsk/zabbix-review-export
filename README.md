@@ -20,7 +20,7 @@ autodetected, but may be pointed manually (it is much faster for single-file imp
 - Installed [Python >=3.4](https://www.python.org/downloads/)
 
 
-If you want use [review (or Monitoring as Code](#make-review):
+If you want use [review (or Monitoring as a Code](#make-review):
 - [GitLab](https://gitlab.com/) - you own instance with configured [GitLab CI](https://docs.gitlab.com/ee/ci/) or cloud account
 - `git`
 
@@ -56,7 +56,7 @@ export ZABBIX_PASSWORD="secret"
 ./zabbix-import.py --type host /path/fo/repo/hosts/*
 ```
 ## Make review
-You want to make review (Moniroting as Code). Read more on habr.com: [RU](#), [EN translated](#)
+You want to make review (Monitoring as a Code). Read more on habr.com: [RU](#), [EN translated](#)
 1. Fork this repository to you GitLab account or instance (e.g. `groupname/zabbix-review-export`)
 2. Create repository where will be saved XML and YAML (e.g. two repositories `groupname/zabbix-xml` and `groupname/zabbix-yaml`. Do first (init) commit (create empty `README.md`).
 3. Create two branches in this repos: `master` and `develop`. In repository `groupname/zabbix-xml` set `develop` as a [default branch](https://docs.gitlab.com/ee/user/project/repository/branches/#default-branch).
